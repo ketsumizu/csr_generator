@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSR Generator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>CSR Generator</h1>
+        <form action="csr.php" method="POST">
+            <label for="countryName" class="form-control">Country Name=国名:(必須)</label>
+            <input type="text" name="countryName" id="countryName" required><br>
+
+            <label for="stateOrProvinceName" class="form-control">State or Province Name=都道府県名:(必須)</label>
+            <input type="text" name="stateOrProvinceName" id="stateOrProvinceName" required><br>
+
+            <label for="localityName" class="form-control">Locality Name=市区町村名:(必須)</label>
+            <input type="text" name="localityName" id="localityName" required><br>
+
+            <label for="organizationName" class="form-control">Organization Name=組織名:(必須)</label>
+            <input type="text" name="organizationName" id="organizationName" required><br>
+
+            <label for="organizationalUnitName" class="form-control">Organizational Unit Name=部署名:</label>
+            <input type="text" name="organizationalUnitName" id="organizationalUnitName"><br>
+
+            <label for="commonName" class="form-control">Common Name:(必須)</label>
+            <input type="text" name="commonName" id="commonName" required><br>
+
+            <label for="emailAddress" class="form-control">Email Address:</label>
+            <input type="email" name="emailAddress" id="emailAddress"><br>
+
+            <button type="submit">Generate CSR</button>
+          </form>
+    </body>
+</html>
